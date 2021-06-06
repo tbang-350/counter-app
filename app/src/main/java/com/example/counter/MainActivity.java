@@ -2,14 +2,13 @@ package com.example.counter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView NumDisp;
-    private int counter = 0;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void AddbyOne(View view) {
-        counter++;
-        NumDisp.setText(Integer.toString(counter));
+        count++;
+        NumDisp.setText(Integer.toString(count));
 
     }
 
     public void DecreasebyOne(View view) {
-        counter--;
-        NumDisp.setText(Integer.toString(counter));
+        count--;
+        NumDisp.setText(Integer.toString(count));
     }
 }
