@@ -20,17 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void AddbyOne(View view) {
-        //counter = 0;
         counter++;
-
         NumDisp.setText(Integer.toString(counter));
 
     }
 
     public void DecreasebyOne(View view) {
-        //counter = 0;
         counter--;
-
         NumDisp.setText(Integer.toString(counter));
     }
 }
